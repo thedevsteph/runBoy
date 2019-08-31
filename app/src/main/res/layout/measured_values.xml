@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical"
+        android:text="Steps"
+        android:textAlignment="center"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/calories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distance_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical"
+        android:text="8,234"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/calories"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distance" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical"
+        android:text="Calories"
+        android:textAlignment="center"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/points"
+        app:layout_constraintStart_toEndOf="@id/distance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calories_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical"
+        android:textAlignment="center"
+        android:text="123"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/points"
+        app:layout_constraintStart_toEndOf="@id/distance_value"
+        app:layout_constraintTop_toBottomOf="@+id/calories" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical"
+        android:text="Points"
+        android:textAlignment="center"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/calories"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/points_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1,294"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/calories"
+        app:layout_constraintTop_toBottomOf="@+id/calories" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
